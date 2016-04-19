@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SurvivalGamesReloaded:jar">
+    <output-path>E:/CloudCraft/My Plugins/SurvivalGamesReloaded</output-path>
+    <root id="archive" name="SurvivalGamesReloaded.jar">
+      <element id="module-output" name="SurvivalGamesReloaded" />
+    </root>
+  </artifact>
+</component>
