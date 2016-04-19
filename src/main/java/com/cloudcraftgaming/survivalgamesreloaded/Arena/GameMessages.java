@@ -186,7 +186,7 @@ public class GameMessages {
         Arena arena = ArenaManager.getManager().getArena(id);
         String msgOr = MessageManager.getMessageYml().getString("Arena.DeathMatch");
         Integer deathMatchTime = ArenaDataGetters.getTieEndLength(id);
-        String msgRep = msgOr.replaceAll("%time$", String.valueOf(deathMatchTime));
+        String msgRep = msgOr.replaceAll("%time%", String.valueOf(deathMatchTime));
         for (UUID uuid : arena.getPlayers()) {
             Player p = Bukkit.getPlayer(uuid);
             p.sendMessage(MessageManager.getPrefix() + ChatColor.translateAlternateColorCodes('&', msgRep));

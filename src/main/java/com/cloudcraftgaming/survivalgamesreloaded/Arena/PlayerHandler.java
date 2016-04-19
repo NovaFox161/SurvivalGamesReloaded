@@ -184,7 +184,7 @@ public class PlayerHandler {
             }
             String headingOr = MessageManager.getMessageYml().getString("Sign.Info.Heading");
             String heading = headingOr.replaceAll("%id%", String.valueOf(id));
-            String statusString = String.valueOf(status).replaceAll("_", " ");
+            String statusString = String.valueOf(status).replaceAll("_", " ").toLowerCase();
             player.sendMessage(ChatColor.translateAlternateColorCodes('&', heading));
             player.sendMessage(ChatColor.GREEN + "Enabled: " + ChatColor.RED + String.valueOf(enabled));
             player.sendMessage(ChatColor.GREEN + "Status: " + ChatColor.RED + statusString);

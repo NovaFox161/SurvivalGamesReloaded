@@ -17,6 +17,7 @@ import java.io.IOException;
 /**
  * Created by Nova Fox on 1/24/2016.
  * Website: www.cloudcraftgaming.com
+ * For Project: SurvivalGamesReloaded.
  */
 public class Main extends JavaPlugin {
     public static Main plugin;
