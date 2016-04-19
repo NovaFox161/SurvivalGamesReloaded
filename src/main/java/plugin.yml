@@ -1,0 +1,37 @@
+name: SurvivalGamesReloaded
+version: 1.0.0
+description: Brings the Hunger Games into Minecraft.
+website: http://dev.bukkit.org/bukkit-plugins/survivalgames-reloaded
+
+load: POSTWORLD
+softdepend: [PerWorldChatPlus]
+
+main: com.cloudcraftgaming.survivalgamesreloaded.Main
+
+commands:
+  survivalgames:
+    description: Base command for SurvivalGamesReloaded.
+    permission: SGR.use.command
+  sg:
+    description: Base command for SurvivalGamesReloaded.
+    permission: SGR.use.command
+
+permissions:
+  SGR.notify.update:
+    description: Allows the player to be notified of an update.
+    default: op
+  SGR.use.command:
+    description: Allows use of the base command.
+    default: true
+  SGR.use.command.set:
+    description: ALlows use of the set commands and its functions.
+    default: op
+  SGR.use.command.create:
+    description: Allows use of the create arena commands.
+    default: op
+  SGR.sign.place:
+    description: Allows placing of SurvivalGamesReloaded signs.
+    default: op
+  SGR.sign.use:
+    description: Allows use of SurvivalGamesReloaded signs.
+    default: true
