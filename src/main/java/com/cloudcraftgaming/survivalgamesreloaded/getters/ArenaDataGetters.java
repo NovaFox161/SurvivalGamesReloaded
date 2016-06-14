@@ -1,6 +1,7 @@
 package com.cloudcraftgaming.survivalgamesreloaded.getters;
 
 import com.cloudcraftgaming.survivalgamesreloaded.Arena.ArenaFileManager;
+import com.cloudcraftgaming.survivalgamesreloaded.Main;
 import com.cloudcraftgaming.survivalgamesreloaded.utils.Cuboid;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -114,5 +115,10 @@ public class ArenaDataGetters {
         Location loc1 = new Location(world1, x1, y1, z1);
         Location loc2 = new Location(world2, x2, y2, z2);
         return new Cuboid(loc1, loc2);
+    }
+    public static String getChatPrefix(int id) {
+        String prefixOr = Main.plugin.getConfig().getString("Chat.Prefix");
+        String prefix = prefixOr.replaceAll("%ArenaName%", getArenaName(id));
+        return ChatColor.translateAlternateColorCodes('&', prefix) + ChatColor.RESET;
     }
 }

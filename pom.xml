@@ -20,8 +20,12 @@
            <id>bukkit-repo</id>
            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
        </repository>
-   </repositories>
-      <dependencies>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+    <dependencies>
        <dependency>
            <groupId>org.bukkit</groupId>
            <artifactId>bukkit</artifactId>
@@ -29,5 +33,10 @@
            <type>jar</type>
            <scope>provided</scope>
        </dependency>
-   </dependencies>
+        <dependency>
+            <groupId>com.github.NovaFox161</groupId>
+            <artifactId>PerWorldChatPlus</artifactId>
+            <version>5.0.1</version>
+          </dependency>
+    </dependencies>
 </project>

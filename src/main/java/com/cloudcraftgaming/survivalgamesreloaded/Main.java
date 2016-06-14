@@ -9,6 +9,7 @@ import com.cloudcraftgaming.survivalgamesreloaded.utils.*;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
@@ -21,6 +22,7 @@ import java.io.IOException;
  */
 public class Main extends JavaPlugin {
     public static Main plugin;
+    public Plugin perWorldChatPlus;
     public UpdateChecker updateChecker;
 
     public Double conVersion = 1.0;
