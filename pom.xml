@@ -16,6 +16,10 @@
       </plugins>
    </build>
     <repositories>
+        <repository>
+            <id>dreamexposure-public</id>
+            <url>https://emily.dreamexposure.org/artifactory/dreamexposure-public/</url>
+        </repository>
        <repository>
            <id>bukkit-repo</id>
            <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
